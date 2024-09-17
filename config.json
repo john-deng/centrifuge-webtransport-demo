@@ -1,0 +1,14 @@
+{
+  "token_hmac_secret_key": "600517a2-424e-43b8-ae1b-331e939d1201",
+  "admin_password": "361d0cc0-a585-4f79-a41f-b708c2398d5a",
+  "admin_secret": "44b99ec5-3c4e-4157-9771-80bbbb3a6a6f",
+  "api_key": "0f9fc9af-031e-437b-8f1a-b26ff8c8ce9a",
+  "allowed_origins": ["http://localhost:3000"],
+  "admin": true,
+  "allow_subscribe_for_client": true,
+  "http3": true,
+  "tls": true,
+  "tls_cert": "localhost.pem",
+  "tls_key": "localhost-key.pem",
+  "webtransport": true
+}
