@@ -54,3 +54,21 @@ google-chrome --disable-web-security --user-data-dir="/tmp/chrome_dev" \
 
 ```
 
+## Test
+
+Publish message from terminal to test it
+
+```bash
+for i in {1..100}; do
+  curl --header "Content-Type: application/json" \
+    --header "X-API-Key: 0f9fc9af-031e-437b-8f1a-b26ff8c8ce9a" \
+    --request POST \
+    --data '{"channel": "test", "data": {"value": '"$i"'}}' \
+    https://localhost:8000/api/publish
+  sleep 1
+done
+```
+
+## Check the result
+
+![](./centrifuge.jpg)
